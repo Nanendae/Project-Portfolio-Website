@@ -12,16 +12,42 @@ This is a personal project to create a website that will display all my personal
 - CSS
 
 ## Features
-/// In development ///
+- Nav Menu
+    - Logo
+    - Navigation Buttons
+    - Social Links
+- Main Page
+    - Bio
+    - Description
+    - Picture
+- Projects Page
+    - List of projects
+        - Image
+        - Name
+        - Description
+        - Githiub Links
+- Footer
+    - Coppyright(?)
+    - Attribution and Author
+    - Links
+        - Github
+        - Linkedin
+    - Contact Info
+        - Name
+        - Number
+        - Email
 
 ## Screenshots
 /// None Yet /// 
 
 ## Setup
-/// Not developed yet ///
+1. Open Index Folder
+2. Click Index folder to boot into browser
 
 ## Project Structure
-/// Not Developed Yet ///
+/// In Progress ///
+        
+
 
 ## Author
 Nicholas C. Papadopoulos
