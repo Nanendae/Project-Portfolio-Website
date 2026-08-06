@@ -26,7 +26,7 @@ nav {
 .navbar {
     /* The navbar doesnt cover the entire nav element */
     width: 100%;
-    height: 4.4cqw;
+    height: 4cqw;
 
     /* Allows for the name and links to be displayed one after another */
     display: flex;
@@ -43,8 +43,24 @@ nav {
     /* Font Settings */
     font-size: 4cqw;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    -webkit-text-stroke: .1px white;
 
     /* Font Position */
     margin-left: 2%;
     margin-bottom: -2%;
+}
+
+.navbuttons ul {
+    display: flex;
+    gap: 5vw;
+    margin-right: 10vw;
+    margin-top: 3vw;
+
+    list-style: none;
+}
+
+.navbuttons li {
+    border: black solid 2px;
+    background-color: white;
+    padding: 2vw;
 }
