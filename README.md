@@ -5,7 +5,7 @@
 This is a personal project to create a website that will display all my personal and professional project ive worked on with descriptions and images. It will contain a homepage with a bio on myself, a projects page which will show a list of chronological github projects and links / displays for my resume and linkedin.
 
 ## Live Demo
-[link once deployed]
+/// Will Be Linked Once Deployed ///
 
 ## Tech Stack
 - HTML5
