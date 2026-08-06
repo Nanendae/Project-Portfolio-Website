@@ -2,13 +2,14 @@
 
 # Project Portfolio Website
 
-This is a personal project to create a website that will display a portfolio of all future personal projects that I make. This is my first solo dev project but not my first time working with frontend development.
+This is a personal project to create a website that will display all my personal and professional project ive worked on with descriptions and images. It will contain a homepage with a bio on myself, a projects page which will show a list of chronological github projects and links / displays for my resume and linkedin.
 
 ## Live Demo
 [link once deployed]
 
 ## Tech Stack
-- HTML5, CSS3, JavaScript
+- HTML5
+- CSS
 
 ## Features
 /// In development ///
