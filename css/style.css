@@ -5,7 +5,11 @@
     margin: 0;
 }
 
-/* Variables */
+/* Broad Element Types */
+
+p {
+    font-size: 3rem;
+}
 
 /* General Rules*/
 
@@ -80,4 +84,15 @@ nav {
 #navbar ul li:hover, #navbar ul li:focus {
     text-decoration: underline;
     color:white;
+}
+
+/* Main */
+
+main {
+    width: 80%;
+    height: 100vh;
+
+    overflow: auto;
+
+    margin: 0 auto;
 }
