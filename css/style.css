@@ -22,18 +22,17 @@ body {
 
 nav {
     width: 100%;
-    height: 105px;
     /* Testing Color Remove Later*/
     /*background-color: rgb(84, 86, 86);*/
 }
 
 #navbar {
     width: 100%;
-    height: 65%;
 
     /* Contains Elements Inside from left to right */
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     /* Colors and Borders */
     background-image: linear-gradient(to right, rgb(85, 160, 230), rgb(55, 46, 157));
@@ -43,7 +42,6 @@ nav {
 #navbar .nameheader h1 {
     width: 40%;
 
-    margin-top: 0px;
     margin-left: 30px;
 
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -52,10 +50,9 @@ nav {
     white-space: nowrap;
 }
 
-#navbar .nameheader p {
+#undernav p {
     
     margin-left: 30px;
-    margin-top: 5px;
 
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.5rem;
