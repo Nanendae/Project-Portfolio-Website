@@ -1,3 +1,10 @@
+:root {
+    --color-gradient-1: rgb(85, 160, 230);
+    --color-gradient-2: rgb(55, 46, 157);
+    --color-textbox: rgb(216, 221, 224);
+}
+
+
 /* CSS Reset */
 * {
     box-sizing:border-box;
@@ -8,7 +15,7 @@
 /* Broad Element Types */
 
 p {
-    font-size: 3rem;
+    font-size: 1rem;
 }
 
 /* General Rules*/
@@ -16,6 +23,11 @@ p {
 body {
     width: 100vw;
     overflow: auto;
+}
+
+img {
+    border: solid 10px transparent;
+    border-image: linear-gradient(to right, var(--color-gradient-1), var(--color-gradient-2)) 1;
 }
 
 /* Nav Bar */
@@ -35,7 +47,7 @@ nav {
     align-items: center;
 
     /* Colors and Borders */
-    background-image: linear-gradient(to right, rgb(85, 160, 230), rgb(55, 46, 157));
+    background-image: linear-gradient(to right, var(--color-gradient-1), var(--color-gradient-2));
     border-bottom: solid rgb(14, 52, 87) 2px;
 }
 
@@ -89,7 +101,26 @@ main {
     width: 80%;
     height: 100vh;
 
-    overflow: auto;
+    margin: 5vw auto;
 
-    margin: 0 auto;
+    overflow: auto;
+}
+
+/* Bio */
+
+.bio {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+}
+
+.textbox {
+
+    padding: 30px;
+
+    background-color: var(--color-textbox);
+    
 }

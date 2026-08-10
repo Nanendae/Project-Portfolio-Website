@@ -41,11 +41,21 @@ This is a personal project to create a website that will display all my personal
 /// None Yet /// 
 
 ## Setup
-1. Open Index Folder
-2. Click Index folder to boot into browser
+1. Open Website Folder Folder
+2. Click Index.html file to boot into browser
 
 ## Project Structure
-/// In Progress ///
+Planning & Design Phase
+
+Prototype 1
+
+Revision & Critique
+
+Initial Deployment
+
+Professional Consultation
+
+Prototype 2
         
 
 
