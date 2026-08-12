@@ -29,6 +29,11 @@ p {
     color:rgb(59, 59, 59);
 }
 
+li {
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 /* General Rules*/
 
 body {
@@ -127,6 +132,22 @@ main {
     gap: 4rem;
 
     margin: auto, auto;
+}
+
+#contacts {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 3rem;
+    
+}
+
+#contacts li {
+    font-size: 3rem;
+
+    background-color: aqua;
+
+    padding: 1rem;
 }
 
 .textbox h2 {
