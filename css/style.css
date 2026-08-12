@@ -1,7 +1,7 @@
 :root {
     --color-gradient-1: rgb(85, 160, 230);
     --color-gradient-2: rgb(55, 46, 157);
-    --color-textbox: rgb(216, 221, 224);
+    --color-background: rgb(227, 235, 241);
 }
 
 
@@ -10,24 +10,33 @@
     box-sizing:border-box;
     padding: 0;
     margin: 0;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* Broad Element Types */
 
+html {
+    background-color: var(--color-background);
+}
+
+h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4rem;
+}
+
 p {
-    font-size: 1rem;
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(59, 59, 59);
 }
 
 /* General Rules*/
 
 body {
-    width: 100vw;
     overflow: auto;
 }
 
 img {
-    border: solid 10px transparent;
+    border: solid 5px transparent;
     border-image: linear-gradient(to right, var(--color-gradient-1), var(--color-gradient-2)) 1;
 }
 
@@ -77,8 +86,6 @@ nav {
 #navbar ul {
     width: 40%;
 
-    margin: 20px;
-
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -96,32 +103,41 @@ nav {
     color:white;
 }
 
+#navbar ul li:active {
+    color:black;
+}
+
 /* Main */
 
 main {
     width: 80%;
-    height: 100vh;
 
-    margin: 5vw auto;
-
-    overflow: auto;
+    margin: 2rem auto;
 }
 
 /* Bio */
 
 .bio {
     width: 100%;
+    min-height: 70vh;
 
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 4rem;
+
+    margin: auto, auto;
+}
+
+.textbox h2 {
+    color: var(--color-gradient-2);
 }
 
 .textbox {
 
-    padding: 30px;
+    border-left: 5px solid black;
 
+    padding: 3rem;
     background-color: var(--color-textbox);
     
 }
