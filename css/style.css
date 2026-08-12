@@ -1,18 +1,20 @@
 :root {
     --color-gradient-1: rgb(85, 160, 230);
     --color-gradient-2: rgb(55, 46, 157);
+    --color-important-text: rgb(38, 119, 194);
     --color-background: rgb(227, 235, 241);
+    --color-gmail-red: #EA4335;
 }
 
 
-/* CSS Reset */
+/*--------------------------------------- CSS Reset ---------------------------------------*/
 * {
     box-sizing:border-box;
     padding: 0;
     margin: 0;
 }
 
-/* Broad Element Types */
+/*--------------------------------------- Broad Element Types ---------------------------------------*/
 
 html {
     background-color: var(--color-background);
@@ -34,6 +36,10 @@ li {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+a {
+    color: var(--color-important-text);
+}
+
 /* General Rules*/
 
 body {
@@ -45,7 +51,7 @@ img {
     border-image: linear-gradient(to right, var(--color-gradient-1), var(--color-gradient-2)) 1;
 }
 
-/* Nav Bar */
+/*--------------------------------------- Nav Bar ---------------------------------------*/
 
 nav {
     width: 100%;
@@ -112,7 +118,7 @@ nav {
     color:black;
 }
 
-/* Main */
+/*--------------------------------------- Main ---------------------------------------*/
 
 main {
     width: 80%;
@@ -120,7 +126,7 @@ main {
     margin: 2rem auto;
 }
 
-/* Bio */
+/*--------------------------------------- Bio ---------------------------------------*/
 
 .bio {
     width: 100%;
@@ -134,24 +140,59 @@ main {
     margin: auto, auto;
 }
 
-#contacts {
+/* left Side */
+
+.image-and-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 2rem;
+}
+
+#icon-links, #contact-links {
+    list-style-type: none;
+}
+
+#icon-links {
+
     display: flex;
     flex-wrap: wrap;
-    list-style-type: none;
-    gap: 3rem;
     
 }
 
-#contacts li {
-    font-size: 3rem;
-
-    background-color: aqua;
-
-    padding: 1rem;
+#icon-links img:hover, #icon-links img:focus{
+    border: solid black 3px;
+    border-radius: 10px;
+    
 }
 
+#contact-links li {
+    margin: 1rem 1.5rem;
+}
+
+#contacts {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: .5rem;
+    
+}
+
+#icon-links img {
+    padding: .2rem;
+    margin: 0 1.5rem;
+
+    border: none;
+    
+}
+
+/* Right Side */
+
 .textbox h2 {
-    color: var(--color-gradient-2);
+    color: var(--color-important-text);
 }
 
 .textbox {
