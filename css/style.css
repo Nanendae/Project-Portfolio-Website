@@ -2,7 +2,8 @@
     --color-gradient-1: rgb(85, 160, 230);
     --color-gradient-2: rgb(55, 46, 157);
     --color-important-text: rgb(38, 119, 194);
-    --color-background: rgb(227, 235, 241);
+    --color-background: rgba(246, 249, 251, 0.634);
+    --color-navbar: rgba(222, 232, 238, 0.634);
     --color-gmail-red: #EA4335;
 }
 
@@ -18,6 +19,7 @@
 
 html {
     background-color: var(--color-background);
+
 }
 
 h2 {
@@ -55,8 +57,7 @@ img {
 
 nav {
     width: 100%;
-    /* Testing Color Remove Later*/
-    /*background-color: rgb(84, 86, 86);*/
+    background-color: var(--color-navbar);
 }
 
 #navbar {
@@ -103,19 +104,26 @@ nav {
     gap: 20px;
 
     list-style: none;
-
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 3rem;
-    white-space: nowrap;
 }
 
-#navbar ul li:hover, #navbar ul li:focus {
-    text-decoration: underline;
+#navbar ul li {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3rem;
+    font-style: italic;
+
+    white-space: nowrap;
+
     color:white;
 }
 
+#navbar ul li:hover, #navbar ul li:focus {
+    font-style: normal;
+}
+
 #navbar ul li:active {
-    color:black;
+    border: solid white 2px;
+    padding: 0 1rem;
+    border-radius: 10px;
 }
 
 /*--------------------------------------- Main ---------------------------------------*/
@@ -132,12 +140,19 @@ main {
     width: 100%;
     min-height: 70vh;
 
+
+    /* Bio Box concept */
+    /*
+    margin: auto, auto;
+    padding: 5rem;
+
+    background-color: white;
+    */
+
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 4rem;
-
-    margin: auto, auto;
 }
 
 /* left Side */
@@ -147,7 +162,7 @@ main {
     flex-direction: column;
     align-items: flex-start;
 
-    gap: 2rem;
+    gap: 1rem;
 }
 
 #icon-links, #contact-links {
@@ -164,11 +179,8 @@ main {
 #icon-links img:hover, #icon-links img:focus{
     border: solid black 3px;
     border-radius: 10px;
+    padding: .2rem;
     
-}
-
-#contact-links li {
-    margin: 1rem 1.5rem;
 }
 
 #contacts {
@@ -182,11 +194,9 @@ main {
 }
 
 #icon-links img {
-    padding: .2rem;
-    margin: 0 1.5rem;
-
     border: none;
-    
+
+    margin: 0 1rem;
 }
 
 /* Right Side */
