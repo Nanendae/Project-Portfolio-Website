@@ -122,7 +122,7 @@ nav {
 
 #navbar ul li:active {
     border: solid white 2px;
-    padding: 0 1rem;
+    background-color: var(--color-background);
     border-radius: 10px;
 }
 
