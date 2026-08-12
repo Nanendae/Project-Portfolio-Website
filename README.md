@@ -41,13 +41,13 @@ This is a personal project to create a website that will display all my personal
 /// None Yet /// 
 
 ## Setup
-1. Open Website Folder Folder
+1. Open Website Folder
 2. Click Index.html file to boot into browser
 
 ## Project Structure
 Planning & Design Phase
 
-Prototype 1
+(We are here) ---> Prototype 1
 
 Revision & Critique
 
