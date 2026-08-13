@@ -23,6 +23,8 @@ html {
 }
 
 h2 {
+    color: var(--color-important-text);
+
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 4rem;
 }
@@ -55,10 +57,14 @@ img {
 
 /*--------------------------------------- Nav Bar ---------------------------------------*/
 
+/* Bar Bounds*/
+
 nav {
     width: 100%;
     background-color: var(--color-navbar);
 }
+
+/*Bar Gradient*/
 
 #navbar {
     width: 100%;
@@ -73,6 +79,8 @@ nav {
     border-bottom: solid rgb(14, 52, 87) 2px;
 }
 
+/* Name Logo */
+
 #navbar .nameheader h1 {
     width: 40%;
 
@@ -84,7 +92,7 @@ nav {
     white-space: nowrap;
 }
 
-#undernav p {
+.undernav p {
     
     margin-left: 30px;
 
@@ -94,6 +102,8 @@ nav {
 
     color:grey
 }
+
+/* Navigation Buttons */
 
 #navbar ul {
     width: 40%;
@@ -144,7 +154,7 @@ main {
 
 /*--------------------------------------- Bio ---------------------------------------*/
 
-.bio {
+#bio {
     width: 100%;
     min-height: 70vh;
 
@@ -165,7 +175,7 @@ main {
 
 /* left Side */
 
-.image-and-links {
+#image-and-links {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -209,10 +219,6 @@ main {
 
 /* Right Side */
 
-.textbox h2 {
-    color: var(--color-important-text);
-}
-
 .textbox {
 
     border-left: 5px solid black;
@@ -221,3 +227,6 @@ main {
     background-color: var(--color-textbox);
     
 }
+
+/*--------------------------------------- Projects ---------------------------------------*/
+
