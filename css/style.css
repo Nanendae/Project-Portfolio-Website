@@ -19,6 +19,8 @@
 
 /*--------------------------------------- Broad Element Types ---------------------------------------*/
 
+/* General Rules*/
+
 html {
     background-color: var(--color-background);
 
@@ -52,9 +54,14 @@ li {
 
 a {
     color: var(--color-important-text);
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
 }
 
-/* General Rules*/
+a:hover, a:focus {
+    text-decoration: none;
+}
 
 body {
     overflow: auto;
@@ -166,7 +173,7 @@ main {
 
 #bio {
     width: 100%;
-    min-height: 70vh;
+    min-height: 80vh;
 
 
     /* Bio Box concept */
@@ -193,26 +200,7 @@ main {
     gap: 1rem;
 }
 
-#icon-links, #contact-links {
-    list-style-type: none;
-}
-
-#icon-links {
-
-    display: flex;
-    flex-wrap: wrap;
-    
-}
-
-#icon-links img:hover, #icon-links img:focus{
-    border: solid black 3px;
-    border-radius: 10px;
-    padding: .2rem;
-    
-}
-
 #contacts {
-
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -221,17 +209,75 @@ main {
     
 }
 
-#icon-links img {
-    border: none;
+#links {
 
+    padding: 1rem 0;
+    margin: 1rem 0;
+
+    border-top: 5px solid grey;
+    border-bottom: 5px solid grey;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#icon-links, #contact-links {
+    list-style-type: none;
+}
+
+#icon-links {
+    display: flex;
+    flex-wrap: wrap;
+
+    border-right: solid grey 3px;
+}
+
+#icon-links img {
+    padding: .2rem;
+
+    border-radius: 10px;
+    border: solid transparent 3px;
+
+    margin: 0 .5rem;
+}
+
+#icon-links img:hover, #icon-links img:focus{
+    border: solid var(--color-important-text) 3px;
+}
+
+#contact-links {
     margin: 0 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+#resume-download {
+    margin: 1rem 0;
+    padding: 1rem;
+    
+    text-decoration: none;
+
+    color: white;
+    background-color: var(--color-important-text);
+
+    border: 3px solid transparent;
+    border-radius: 1rem;
+}
+
+#resume-download:hover, #resume-download:focus {
+    background-color: white;
+    color: var(--color-important-text);
+    border: 3px solid var(--color-important-text);
 }
 
 /* Right Side */
 
 .textbox {
 
-    border-left: 5px solid grey;
+    border-left: 5px solid gray;
 
     padding: 3rem;
     background-color: var(--color-textbox);
@@ -251,7 +297,7 @@ main {
 
 .page-description {
     margin: 1rem;
-    padding: 3rem;
+    padding: 1.5rem;
 
     border-bottom: solid grey 5px;
 }
