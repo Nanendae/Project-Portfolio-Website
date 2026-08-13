@@ -3,7 +3,9 @@
     --color-gradient-2: rgb(55, 46, 157);
     --color-important-text: rgb(38, 119, 194);
     --color-background: rgba(246, 249, 251, 0.634);
-    --color-navbar: rgba(222, 232, 238, 0.634);
+    --color-projectcard: rgb(228, 238, 246);
+    --color-navbar: rgb(228, 240, 247);
+    --color-plaintext: rgb(59, 59, 59);
     --color-gmail-red: #EA4335;
 }
 
@@ -29,10 +31,18 @@ h2 {
     font-size: 4rem;
 }
 
+h3 {
+    color: black;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 p {
     font-size: 2rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:rgb(59, 59, 59);
+    color:var(--color-plaintext);
 }
 
 li {
@@ -221,7 +231,7 @@ main {
 
 .textbox {
 
-    border-left: 5px solid black;
+    border-left: 5px solid grey;
 
     padding: 3rem;
     background-color: var(--color-textbox);
@@ -229,4 +239,70 @@ main {
 }
 
 /*--------------------------------------- Projects ---------------------------------------*/
+
+/* Title and Description */
+
+#projects-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-description {
+    margin: 1rem;
+    padding: 3rem;
+
+    border-bottom: solid grey 5px;
+}
+
+/* Projects List */
+
+#projects-list {
+    margin: 1rem;
+    padding: 3rem;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+#projects-list a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.project {
+    padding: 2rem;
+
+    background-color: var(--color-projectcard);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: self-start;
+    gap: 1rem;
+
+    border: solid 5px;
+    border-image: linear-gradient(var(--color-gradient-1), transparent, var(--color-gradient-2)) 1;
+
+    transition: 0.3s ease;
+}
+
+.project img {
+    border: none;
+    margin: 0 auto;
+}
+
+.project:hover {
+    transform: translateY(-1rem);
+}
+
+.project p {
+    font-size: 1.5rem;
+}
+
+.project h3 + p {
+    font-size: 1rem;
+}
 
