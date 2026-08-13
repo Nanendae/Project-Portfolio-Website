@@ -57,7 +57,9 @@ Professional Consultation
 
 Prototype 2
         
+## Known Bugs
 
+- Nav Bar is cut off if screen size is slimmer on width
 
 ## Author
 Nicholas C. Papadopoulos
