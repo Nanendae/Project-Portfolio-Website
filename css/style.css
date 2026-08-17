@@ -3,7 +3,7 @@
     --color-gradient-2: rgb(55, 46, 157);
     --color-important-text: rgb(38, 119, 194);
     --color-background: rgba(246, 249, 251, 0.634);
-    --color-projectcard: rgb(228, 238, 246);
+    --color-projectcard: rgb(228, 238, 246, .6);
     --color-navbar: rgb(228, 240, 247);
     --color-plaintext: rgb(59, 59, 59);
     --color-gmail-red: #EA4335;
@@ -138,21 +138,28 @@ nav {
 #navbar ul li a {
     padding: 4px;
 
+    text-decoration: none;
+
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 3rem;
+
+    background-color: rgb(255, 255, 255, .2);
 
     white-space: nowrap;
 
     border: solid 2px transparent;
+    border-radius: 10px;
 
     color:white;
+
+    transition: 0.3s ease;
 }
 
 #navbar ul li a:hover, #navbar ul li a:focus {
     text-decoration: none;
 
+    background-color: rgb(255, 255, 255, .4);
     border: solid white 2px;
-    border-radius: 10px;
 }
 
 #navbar ul li a:active {
@@ -222,15 +229,12 @@ main {
     align-items: center;
 }
 
-#icon-links, #contact-links {
-    list-style-type: none;
-}
-
 #icon-links {
+
+    list-style: none;
+
     display: flex;
     flex-wrap: wrap;
-
-    border-right: solid grey 3px;
 }
 
 #icon-links img {
@@ -244,14 +248,8 @@ main {
 
 #icon-links img:hover, #icon-links img:focus{
     border: solid var(--color-important-text) 3px;
-}
 
-#contact-links {
-    margin: 0 1rem;
-
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
+    transition: 0.3s ease;
 }
 
 #resume-download {
@@ -265,6 +263,8 @@ main {
 
     border: 3px solid transparent;
     border-radius: 1rem;
+
+    transition: 0.3s ease;
 }
 
 #resume-download:hover, #resume-download:focus {
