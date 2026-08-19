@@ -2,7 +2,7 @@
 
 # Project Portfolio Website
 
-This is a personal project to create a website that will display all my personal and professional project ive worked on with descriptions and images. It will contain a homepage with a bio on myself, a projects page which will show a list of chronological github projects and links / displays for my resume and linkedin.
+This is a personal project to create a website that will display all my personal and professional project's ive worked on with descriptions and images. It will contain a homepage with a bio on myself, a projects page which will show a list of chronological Github projects and links / displays for my resume and linkedin.
 
 ## Live Demo
 /// Will Be Linked Once Deployed ///
@@ -25,18 +25,18 @@ This is a personal project to create a website that will display all my personal
         - Image
         - Name
         - Description
-        - Githiub Links
+        - Github Links
 - Education Page
     - Education Card
         - GPA
-        - Honnors
+        - Honors
         - Major
     - Course Highlights
         - Course Name
         - Course Description
         - Course Number and Date
 - Footer
-    - Coppyright(?)
+    - Copyright(?)
     - Attribution and Author
     - Links
         - Github
@@ -46,12 +46,9 @@ This is a personal project to create a website that will display all my personal
         - Number
         - Email
 
-## Screenshots
-/// None Yet /// 
-
 ## Setup
 1. Open Website Folder
-2. Click Index.html file to boot into browser
+2. Click index.html file to boot into browser
 
 ## Project Structure
 Planning & Design Phase
