@@ -26,6 +26,15 @@ This is a personal project to create a website that will display all my personal
         - Name
         - Description
         - Githiub Links
+- Education Page
+    - Education Card
+        - GPA
+        - Honnors
+        - Major
+    - Course Highlights
+        - Course Name
+        - Course Description
+        - Course Number and Date
 - Footer
     - Coppyright(?)
     - Attribution and Author
