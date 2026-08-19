@@ -7,6 +7,9 @@
     --color-navbar: rgb(228, 240, 247);
     --color-plaintext: rgb(59, 59, 59);
     --color-gmail-red: #EA4335;
+    --color-umbc-gold: #fdb515;
+    --color-umbc-dark-gold: #a67a05;
+    --color-umbc-grey: #c7c8ca;
 }
 
 
@@ -70,6 +73,13 @@ body {
 img {
     border: solid 5px transparent;
     border-image: linear-gradient(to right, var(--color-gradient-1), var(--color-gradient-2)) 1;
+}
+
+/*--------------------------------------- Global Rules ---------------------------------------*/
+
+.important {
+    color: var(--color-important-text);
+    font-weight: bold;
 }
 
 /*--------------------------------------- Nav Bar ---------------------------------------*/
@@ -363,19 +373,67 @@ main {
 
 #umbc-stat-block {
     padding: 2rem;
+    margin: 2rem auto;
 
-    background-image: linear-gradient(to bottom, white,var(--color-projectcard));
+    background-image: url(../images/flag-of-maryland.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     
     display: flex;
+    width: fit-content;
     flex-direction: column;
     justify-content: center;
     align-items: self-start;
     gap: 1rem;
 
-    border: 5px solid var(--color-important-text);
+    border: 5px solid var(--color-umbc-gold);
     border-radius: 10px;
 }
 
+#umbc-stat-block h2{
+    color: black;
+}
+
+#umbc-stat-block .important {
+    color: black;
+    opacity: .8;
+}
+
+#stats {
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+
+    border-top: solid gray 2px;
+    border-bottom: solid gray 2px;
+}
+
+#classes {
+    margin: 1rem;
+    padding: 3rem;
+
+    border-right: solid 5px var(--color-umbc-gold);
+    border-left: solid 5px var(--color-umbc-gold);
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.class {
+    padding-bottom: 2rem;
+
+    border-bottom: solid 2px grey;
+}
+
+.class-title {
+    margin: 1rem;
+}
+
+/*
+SCRAPPED HONNORS TIMELINE
 #honnors-timeline ul{
 
     margin: .5rem;
@@ -397,3 +455,4 @@ main {
 
         gap: .2rem;
 }
+*/
