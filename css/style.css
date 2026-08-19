@@ -371,20 +371,27 @@ main {
     align-items: center;
 }
 
+#education-page > h3 {   
+    display: flex;
+    justify-content: center;
+}
+
+#block-and-photo {
+    margin: 2rem auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 6rem;
+}
+
 #umbc-stat-block {
     padding: 2rem;
-    margin: 2rem auto;
 
     background-image: url(../images/flag-of-maryland.png);
     background-size: cover;
     background-repeat: no-repeat;
-    
-    display: flex;
-    width: fit-content;
-    flex-direction: column;
-    justify-content: center;
-    align-items: self-start;
-    gap: 1rem;
 
     border: 5px solid var(--color-umbc-gold);
     border-radius: 10px;
@@ -423,13 +430,17 @@ main {
 }
 
 .class {
-    padding-bottom: 2rem;
+    padding: 1rem 1rem 2rem 1rem;
 
     border-bottom: solid 2px grey;
 }
 
 .class-title {
     margin: 1rem;
+}
+
+.class p{
+    text-align: justify;
 }
 
 /*
