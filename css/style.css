@@ -26,7 +26,7 @@
 
 html {
     background-color: var(--color-background);
-
+    height: 100%;
 }
 
 h2 {
@@ -67,7 +67,13 @@ a:hover, a:focus {
 }
 
 body {
+    height: 100%;
+
     overflow: auto;
+
+    display: flex;
+    flex-direction: column;
+    
 }
 
 img {
@@ -89,6 +95,29 @@ img {
     border-bottom: solid grey 5px;
 }
 
+.icon-links {
+
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.icon-links img {
+    padding: .2rem;
+
+    border-radius: 10px;
+    border: solid transparent 3px;
+
+    margin: 0 .5rem;
+}
+
+.icon-links img:hover, .icon-links img:focus{
+    border: solid var(--color-important-text) 3px;
+
+    transition: 0.3s ease;
+}
+
 /*--------------------------------------- Nav Bar ---------------------------------------*/
 
 /* Bar Bounds*/
@@ -100,15 +129,13 @@ nav {
 
 /*Bar Gradient*/
 
-#navbar {
+#navbar{
     width: 100%;
 
-    /* Contains Elements Inside from left to right */
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    /* Colors and Borders */
     background-image: linear-gradient(to right, var(--color-gradient-1), var(--color-gradient-2));
     border-bottom: solid rgb(14, 52, 87) 2px;
 }
@@ -191,7 +218,40 @@ main {
     width: 80%;
 
     margin: 2rem auto;
+
+    flex: 1;
 }
+
+/*--------------------------------------- Footer ---------------------------------------*/
+
+footer {
+    width: 100%;
+
+    margin: 3rem 0;
+
+    /* Colors and Borders */
+    background-image: linear-gradient(to right, var(--color-gradient-1), var(--color-gradient-2));
+}
+
+footer ul {
+    margin: 2rem 3rem;
+    list-style: none;
+}
+
+footer ul li p, footer ul li a{
+    color: white;
+}
+
+footer .icon-links {
+    margin: 1rem 0;
+}
+
+footer .icon-links img:hover,footer .icon-links img:focus{
+    border: solid white 3px;
+
+    transition: 0.3s ease;
+}
+
 
 /*--------------------------------------- Bio ---------------------------------------*/
 
@@ -244,29 +304,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#icon-links {
-
-    list-style: none;
-
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#icon-links img {
-    padding: .2rem;
-
-    border-radius: 10px;
-    border: solid transparent 3px;
-
-    margin: 0 .5rem;
-}
-
-#icon-links img:hover, #icon-links img:focus{
-    border: solid var(--color-important-text) 3px;
-
-    transition: 0.3s ease;
 }
 
 #resume-download {

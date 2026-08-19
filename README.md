@@ -53,9 +53,9 @@ This is a personal project to create a website that will display all my personal
 ## Project Structure
 Planning & Design Phase
 
-(We are here) ---> Prototype 1
+Prototype 1
 
-Revision & Critique
+(We are here) ---> Revision & Critique
 
 Initial Deployment
 
