@@ -82,6 +82,13 @@ img {
     font-weight: bold;
 }
 
+.page-description {
+    margin: 1rem;
+    padding: 1.5rem;
+
+    border-bottom: solid grey 5px;
+}
+
 /*--------------------------------------- Nav Bar ---------------------------------------*/
 
 /* Bar Bounds*/
@@ -305,13 +312,6 @@ main {
     align-items: center;
 }
 
-.page-description {
-    margin: 1rem;
-    padding: 1.5rem;
-
-    border-bottom: solid grey 5px;
-}
-
 /* Projects List */
 
 #projects-list {
@@ -362,7 +362,7 @@ main {
     font-size: 1rem;
 }
 
-/*--------------------------------------- Projects ---------------------------------------*/
+/*--------------------------------------- Education ---------------------------------------*/
 
 #educaiton-page {
     display: flex;
