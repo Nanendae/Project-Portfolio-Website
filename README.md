@@ -55,9 +55,9 @@ Planning & Design Phase
 
 Prototype 1
 
-(We are here) ---> Revision & Critique
+Revision & Critique
 
-Initial Deployment
+(We are here) ---> Initial Deployment
 
 Professional Consultation
 
